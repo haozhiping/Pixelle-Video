@@ -49,6 +49,7 @@ LLM_PRESETS: List[Dict[str, Any]] = [
         "base_url": "http://localhost:11434/v1",
         "model": "llama3.2",
         "api_key_url": "https://ollama.com/download",
+        "default_api_key": "ollama",  # Required by OpenAI SDK but ignored by Ollama
     },
     {
         "name": "Moonshot",

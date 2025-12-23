@@ -34,6 +34,7 @@ env/
 *~
 .cursorrules
 .cursorignore
+.kiro/
 
 # OS
 .DS_Store

@@ -60,14 +60,15 @@ class LLMService:
         Initialize LLM service
         
         Args:
-            config: Full application config dict
+            config: Full application config dict (kept for backward compatibility)
         """
-        self.config = config.get("llm", {})
+        # Note: We no longer cache config here to support hot reload
+        # Config is read dynamically from config_manager in _get_config_value()
         self._client: Optional[AsyncOpenAI] = None
     
     def _get_config_value(self, key: str, default=None):
         """
-        Get config value from config file
+        Get config value dynamically from config_manager (supports hot reload)
         
         Args:
             key: Config key name
@@ -76,7 +77,8 @@ class LLMService:
         Returns:
             Config value
         """
-        return self.config.get(key, default)
+        from pixelle_video.config import config_manager
+        return getattr(config_manager.config.llm, key, default)
     
     def _create_client(
         self,
