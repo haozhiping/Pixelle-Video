@@ -5,7 +5,7 @@
 **AI 视频创作工具 - 3 分钟生成一个短视频**
 
 [![Stars](https://img.shields.io/github/stars/AIDC-AI/Pixelle-Video.svg?style=flat-square)](https://github.com/AIDC-AI/Pixelle-Video/stargazers)
-[![Issues](https://img.shields.io/github/issues/AIDC-AI/Pixelle-Video.svg?style=flat-square)](https://github.com/AIDC-AI/Pixelle-Video/issues)
+[![Issues](https://img.shields.io/github/issues/AIDC-AI/Pixelle-Video.svg?style=flat-square)](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f)
 [![License](https://img.shields.io/github/license/AIDC-AI/Pixelle-Video.svg?style=flat-square)](https://github.com/AIDC-AI/Pixelle-Video/blob/main/LICENSE)
 
 </div>
@@ -87,8 +87,8 @@ Pixelle-Video 的设计受到以下优秀开源项目的启发：
 
 ## 📢 反馈与支持
 
-- 🐛 **遇到问题**: 提交 [Issue](https://github.com/AIDC-AI/Pixelle-Video/issues)
-- 💡 **功能建议**: 提交 [Feature Request](https://github.com/AIDC-AI/Pixelle-Video/issues)
+- 🐛 **遇到问题**: 提交 [Issue](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f)
+- 💡 **功能建议**: 提交 [Feature Request](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f)
 - ⭐ **给个 Star**: 如果这个项目对你有帮助，欢迎给个 Star 支持一下！
 
 ---

@@ -402,7 +402,5 @@ templates/
 
 ---
 
-## 更多信息
 
-如有模板开发相关问题，欢迎在 [GitHub Issues](https://github.com/AIDC-AI/Pixelle-Video/issues) 中提问。
 

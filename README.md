@@ -1,4 +1,4 @@
-<h1 align="center">🎬 Pixelle-Video —— AI 全自动短视频引擎</h1>
+<h1 align="center">🎬 MySoAI-Video—— AI 全自动短视频引擎</h1>
 
 <p align="center"><a href="README_EN.md">English</a> | <b>中文</b></p>
 
@@ -7,7 +7,7 @@
   <a href="https://github.com/AIDC-AI/Pixelle-Video/releases" target="_blank"><img src="https://img.shields.io/badge/📦 Windows包-50C878" alt="Windows整合包"></a>
   <a href="https://aidc-ai.github.io/Pixelle-Video/zh" target="_blank"><img src="https://img.shields.io/badge/📘 使用文档-4A90E2" alt="使用文档"></a>
   <a href="https://github.com/AIDC-AI/Pixelle-Video/stargazers"><img src="https://img.shields.io/github/stars/AIDC-AI/Pixelle-Video.svg" alt="Stargazers"></a>
-  <a href="https://github.com/AIDC-AI/Pixelle-Video/issues"><img src="https://img.shields.io/github/issues/AIDC-AI/Pixelle-Video.svg" alt="Issues"></a>
+  <a href="https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f"><img src="https://img.shields.io/github/issues/AIDC-AI/Pixelle-Video.svg" alt="Issues"></a>
   <a href="https://github.com/AIDC-AI/Pixelle-Video/network/members"><img src="https://img.shields.io/github/forks/AIDC-AI/Pixelle-Video.svg" alt="Forks"></a>
   <a href="https://github.com/AIDC-AI/Pixelle-Video/blob/main/LICENSE"><img src="https://img.shields.io/github/license/AIDC-AI/Pixelle-Video.svg" alt="License"></a>
 </p>
@@ -400,8 +400,8 @@ Pixelle-Video 的设计受到以下优秀开源项目的启发：
 
 ## 📢 反馈与支持
 
-- 🐛 **遇到问题**: 提交 [Issue](https://github.com/AIDC-AI/Pixelle-Video/issues)
-- 💡 **功能建议**: 提交 [Feature Request](https://github.com/AIDC-AI/Pixelle-Video/issues)
+- 🐛 **遇到问题**: 提交 [Issue](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f)
+- 💡 **功能建议**: 提交 [Feature Request](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f)
 - ⭐ **给个 Star**: 如果这个项目对你有帮助，欢迎给个 Star 支持一下！
 
 

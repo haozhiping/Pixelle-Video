@@ -86,15 +86,15 @@ def render_faq_sidebar():
                 # Display FAQ content
                 st.markdown(faq_content, unsafe_allow_html=True)
             
-            # Add a link to GitHub issues for more help
+            # Add a link to MySoAI Video for more help
             st.markdown(
                 f"💡 {tr('faq.more_help', fallback='Need more help?')} "
-                f"[GitHub Issues](https://github.com/AIDC-AI/Pixelle-Video/issues)"
+                f"[MySoAI Video](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f)"
             )
         else:
             # If FAQ cannot be loaded, only show the GitHub link
             st.markdown(f"### 💡 {tr('faq.more_help', fallback='Need help?')}")
             st.markdown(
-                f"[GitHub Issues](https://github.com/AIDC-AI/Pixelle-Video/issues) | "
+                f"[MySoAI Video](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f) | "
                 f"[Documentation](https://aidc-ai.github.io/Pixelle-Video)"
             )

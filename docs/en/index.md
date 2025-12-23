@@ -5,7 +5,7 @@
 **AI Video Creator - Generate a short video in 3 minutes**
 
 [![Stars](https://img.shields.io/github/stars/AIDC-AI/Pixelle-Video.svg?style=flat-square)](https://github.com/AIDC-AI/Pixelle-Video/stargazers)
-[![Issues](https://img.shields.io/github/issues/AIDC-AI/Pixelle-Video.svg?style=flat-square)](https://github.com/AIDC-AI/Pixelle-Video/issues)
+[![Issues](https://img.shields.io/github/issues/AIDC-AI/Pixelle-Video.svg?style=flat-square)](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f)
 [![License](https://img.shields.io/github/license/AIDC-AI/Pixelle-Video.svg?style=flat-square)](https://github.com/AIDC-AI/Pixelle-Video/blob/main/LICENSE)
 
 </div>
@@ -87,8 +87,8 @@ Thanks to these projects for their open source spirit! 🙏
 
 ## 📢 Feedback & Support
 
-- 🐛 **Found a bug**: Submit an [Issue](https://github.com/AIDC-AI/Pixelle-Video/issues)
-- 💡 **Feature request**: Submit a [Feature Request](https://github.com/AIDC-AI/Pixelle-Video/issues)
+- 🐛 **Found a bug**: Submit an [Issue](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f)
+- 💡 **Feature request**: Submit a [Feature Request](https://ai.feishu.cn/wiki/PAaYwlVrpishg5kQXQocxYG0n4f)
 - ⭐ **Give us a Star**: If this project helps you, please give us a star!
 
 ---
