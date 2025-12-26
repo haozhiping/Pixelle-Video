@@ -14,23 +14,16 @@
         "3",
         0
       ],
-      "mode": "Auto",
-      "do_sample_mode": "on",
-      "temperature": 0.8,
-      "top_p": 0.9,
-      "top_k": 30,
-      "num_beams": 3,
-      "repetition_penalty": 10,
-      "length_penalty": 0,
-      "max_mel_tokens": 1815,
-      "max_tokens_per_sentence": 120,
-      "seed": 4266796044,
-      "reference_audio": [
+      "speaker_audio": [
         "12",
         0
-      ]
+      ],
+      "output_filename": "indextts2_output.wav",
+      "temperature": 0.8,
+      "top_p": 0.9,
+      "speed": 1.0
     },
-    "class_type": "IndexTTS2BaseNode",
+    "class_type": "IndexTTS2_Basic",
     "_meta": {
       "title": "Index TTS 2 - Base"
     }
@@ -52,11 +45,11 @@
   },
   "12": {
     "inputs": {
-      "audio": "小裴钱.wav",
-      "start_time": 0,
+      "audio_file": "",
+      "seek_seconds": 0,
       "duration": 0
     },
-    "class_type": "VHS_LoadAudioUpload",
+    "class_type": "VHS_LoadAudio",
     "_meta": {
       "title": "$ref_audio.audio"
     }

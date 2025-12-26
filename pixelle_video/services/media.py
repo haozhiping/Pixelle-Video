@@ -245,6 +245,45 @@ class MediaService(ComfyBaseService):
             # 5. Handle result based on specified media_type
             if result.status != "completed":
                 error_msg = result.msg or "Unknown error"
+                
+                # Enhance error message for model validation errors
+                if "value_not_in_list" in error_msg or "not in" in error_msg:
+                    # Extract model-related errors
+                    import json
+                    try:
+                        if hasattr(result, 'raw_response') and result.raw_response:
+                            error_data = result.raw_response
+                            if isinstance(error_data, str):
+                                error_data = json.loads(error_data)
+                            
+                            if "node_errors" in error_data.get("error", {}):
+                                node_errors = error_data["error"]["node_errors"]
+                                model_errors = []
+                                
+                                for node_id, node_error in node_errors.items():
+                                    if "errors" in node_error:
+                                        for err in node_error["errors"]:
+                                            if err.get("type") == "value_not_in_list":
+                                                details = err.get("details", "")
+                                                if "unet_name" in details or "clip_name" in details or "vae_name" in details or "lora_name" in details:
+                                                    model_errors.append(f"Node {node_id}: {details}")
+                                
+                                if model_errors:
+                                    enhanced_msg = (
+                                        f"模型文件不存在或不在允许列表中。\n"
+                                        f"请确保以下模型文件已下载并放置在 ComfyUI 的相应目录中：\n\n"
+                                        + "\n".join(f"  - {err}" for err in model_errors) + "\n\n"
+                                        f"如果您的 ComfyUI 中没有这些模型，请：\n"
+                                        f"1. 下载所需的模型文件\n"
+                                        f"2. 或者使用其他可用的工作流（如 image_flux.json）\n"
+                                        f"3. 或者通过参数指定您已有的模型名称\n\n"
+                                        f"原始错误: {error_msg}"
+                                    )
+                                    logger.error(f"Media generation failed: {enhanced_msg}")
+                                    raise Exception(f"Media generation failed: {enhanced_msg}")
+                    except Exception as parse_error:
+                        logger.debug(f"Failed to parse error details: {parse_error}")
+                
                 logger.error(f"Media generation failed: {error_msg}")
                 raise Exception(f"Media generation failed: {error_msg}")
             

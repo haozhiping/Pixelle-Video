@@ -152,7 +152,7 @@ def render_advanced_settings():
                     )
                 
                 # Test connection button
-                if st.button(tr("btn.test_connection"), key="test_comfyui", use_container_width=True):
+                if st.button(tr("btn.test_connection"), key="test_comfyui", width='stretch'):
                     try:
                         import requests
                         response = requests.get(f"{comfyui_url}/system_stats", timeout=5)
@@ -177,7 +177,7 @@ def render_advanced_settings():
                 st.caption(
                     f"{tr('settings.comfyui.runninghub_hint')} "
                     f"[{tr('settings.comfyui.runninghub_get_api_key')}]"
-                    f"(https://www.runninghub{'.cn' if get_language() == 'zh_CN' else '.ai'}/?inviteCode=bozpdlbj)"
+                    f"(https://www.runninghub{'.cn' if get_language() == 'zh_CN' else '.ai'}/?inviteCode=11kr2iln)"
                 )
         
         # ====================================================================
@@ -187,7 +187,7 @@ def render_advanced_settings():
         
         col1, col2 = st.columns(2)
         with col1:
-            if st.button(tr("btn.save_config"), use_container_width=True, key="save_config_btn"):
+            if st.button(tr("btn.save_config"), width='stretch', key="save_config_btn"):
                 try:
                     # Validate and save LLM configuration
                     if not (llm_api_key and llm_base_url and llm_model):
@@ -211,7 +211,7 @@ def render_advanced_settings():
                     st.error(f"{tr('status.save_failed')}: {str(e)}")
         
         with col2:
-            if st.button(tr("btn.reset_config"), use_container_width=True, key="reset_config_btn"):
+            if st.button(tr("btn.reset_config"), width='stretch', key="reset_config_btn"):
                 # Reset to default
                 from pixelle_video.config.schema import PixelleVideoConfig
                 config_manager.config = PixelleVideoConfig()

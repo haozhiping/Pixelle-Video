@@ -46,7 +46,7 @@
   },
   "5": {
     "inputs": {
-      "text": "[Chinese] zh-CN Yunjian",
+      "text": "zh-CN-YunjianNeural",
       "anything": [
         "7",
         0
@@ -59,7 +59,7 @@
   },
   "7": {
     "inputs": {
-      "value": "[Chinese] zh-CN Yunjian"
+      "value": "zh-CN-YunjianNeural"
     },
     "class_type": "PrimitiveStringMultiline",
     "_meta": {
